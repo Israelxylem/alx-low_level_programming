@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*main - prints the numbers from 1 to 100, followed by the 
+*main - prints the numbers from 1 to 100, followed by the
 *but the multiples of three prints Fizz instead of the three
 *and for the multiples of five prints Buzz
 *Returns: Always 0 (success)
@@ -28,7 +28,7 @@ int main(void)
 		else if (i == 1)
 		{printf("%d", 1);
 		}
-		else 
+		else
 		{
 			printf(" %d", i);
 		}
