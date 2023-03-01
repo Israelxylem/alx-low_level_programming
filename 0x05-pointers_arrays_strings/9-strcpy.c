@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * char *_strcpy -a function that copies the string point
-y src
+ * char *_strcpy -a function that copies the string point y src
 * @dest: copy to
 * @src: copy from
 * Return: string
