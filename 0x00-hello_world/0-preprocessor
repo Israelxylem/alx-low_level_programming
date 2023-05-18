@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc name.c -o name
+gcc -E  name.c
