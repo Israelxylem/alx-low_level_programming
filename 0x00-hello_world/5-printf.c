@@ -1,6 +1,7 @@
 #include <stdio.h>
-/*
- * main - the program prints a string at success
+#include <stdio.h>
+/**
+ * main - Entry point
  *
  * Return: Always 0 (success)
  */
