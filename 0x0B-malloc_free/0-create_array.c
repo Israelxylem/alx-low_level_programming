@@ -2,26 +2,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* main - creates an array
- * @c- prints the size of the aloocated memory
- * size- is the size of the mem allocated
- * return: array at success and null at failure
+#include <stdlib.h>
+
+/**
+ * create_array - create an array of chars, and initialize with specific char
+ * @size: size of array
+ * @c: specific char
+ * Return: char pointer to malloc created memory address or NULL if error
  */
 
-char *create_array(unsigned int size, char c) {
-    if (size == 0) {
-        return NULL;  
-    }
+char *create_array(unsigned int size, char c)
+{
+	char *a;
+	unsigned int i;
 
-    char *array = malloc(size * sizeof(char));  
+	if (size == 0)
+		return (NULL);
 
-    if (array == NULL) {
-        return NULL;  
-    }
+	a = malloc(size * sizeof(*a));
+	if (a == NULL)
+		return (NULL);
 
-    for (unsigned int i = 0; i < size; i++) {
-        array[i] = c;  
-    }
+	for (i = 0; i < size; i++)
+		a[i] = c;
 
-    return (array);
+	return (a);
 }
